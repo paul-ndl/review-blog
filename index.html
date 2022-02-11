@@ -14,10 +14,10 @@
     </header>
 
     <ul class="navigation">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">A propos</a></li>
-        <li><a href="#post">Post</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#about" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#post" onclick="toggleMenu();">Post</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
     </ul>
 
     <!-- Banner -->
@@ -90,7 +90,7 @@
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="postBox">
+                <div class="postBox extraHeight">
                     <div class="imgBx">
                         <img src="resources/post3.jpg" class="cover">
                     </div>
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="postColumn">
-                <div class="postBox">
+                <div class="postBox extraHeight">
                     <div class="imgBx">
                         <img src="resources/post4.jpg" class="cover">
                     </div>
@@ -154,7 +154,7 @@
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="postBox">
+                <div class="postBox extraHeight">
                     <div class="imgBx">
                         <img src="resources/post9.jpg" class="cover">
                     </div>
@@ -166,7 +166,47 @@
                 </div>
             </div>
         </div>
+        <div class="title">
+            <a href="#" class="btn mgt60">Plus de post</a>
+        </div>
     </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam incidunt iusto omnis,
+                totam provident beatae quos eius animi esse commodi facilis necessitatibus voluptas fugiat.</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="Prénom">
+                <input type="text" name="" placeholder="Nom">
+            </div>
+            <div class="row">
+                <input type="text" name="" placeholder="Adresse email">
+                <input type="text" name="" placeholder="Numéro téléphone">
+            </div>
+            <div class="row2">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="row2">
+                <input type="submit" value="Send" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="logo">My Blog</a>
+        <ul class="footerMenu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#post">Post</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyrightText">Copyright &#169; 2022. All right Reserved</p>
+    </footer>
 
     <script>
         const menuToggle = document.querySelector('.menuToggle');
@@ -179,6 +219,11 @@
             const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         })
+
+        function toggleMenu(){
+            menuToggle.classList.remove('active');
+            navigation.classList.remove('active');
+        }
     </script>
 </body>
 

@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body
@@ -250,4 +251,194 @@ p
 .about .contentBx .content .imgBx
 {
     min-height: 400px;
+}
+
+.post
+{
+    position: relative;
+}
+
+.post .contentBx
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.post .contentBx .postColumn
+{
+    position: relative;
+}
+
+.post .contentBx .postColumn .postBox
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.post .contentBx .postColumn .postBox.extraHeight
+{
+    height: 600px;
+}
+
+.post .contentBx .postColumn .postBox .textBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: 0.25s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.post .contentBx .postColumn .postBox:hover .textBx
+{
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.post .contentBx .postColumn .postBox .textBx h3
+{
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.post .contentBx .postColumn .postBox .textBx .btn
+{
+    padding: 4px 10px;
+    background: black;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.mgt60
+{
+    margin-top: 60px;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contactForm
+{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.contact .contactForm .row
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact .contactForm .row2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .row2 textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact .contactForm .row2 textarea
+{
+    resize: none;
+    height: 200px;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+.contact .contactForm .row2 input[type="submit"]
+{
+    background: white;
+    color: black;   
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.contact .contactForm .row2 input[type="submit"]:hover
+{
+    background: black;
+    color: white;   
+}
+
+footer
+{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+footer .footerMenu
+{
+    display: flex;
+}
+
+footer .footerMenu li
+{
+    list-style: none;
+}
+
+footer .footerMenu li a
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.copyrightText
+{
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
 }
