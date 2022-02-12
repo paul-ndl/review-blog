@@ -150,7 +150,7 @@ section
     font-size: 2em;
     font-weight: 500;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -253,12 +253,13 @@ p
     min-height: 400px;
 }
 
-.post
+.post, .allPost
 {
     position: relative;
 }
 
-.post .contentBx
+.post .contentBx,
+.allPost .contentBx
 {
     position: relative;
     display: grid;
@@ -267,12 +268,14 @@ p
     margin-top: 20px;
 }
 
-.post .contentBx .postColumn
+.post .contentBx .postColumn,
+.allPost .contentBx .postColumn
 {
     position: relative;
 }
 
-.post .contentBx .postColumn .postBox
+.post .contentBx .postColumn .postBox,
+.allPost .contentBx .postColumn .postBox
 {
     position: relative;
     width: 100%;
@@ -280,12 +283,8 @@ p
     margin-top: 20px;
 }
 
-.post .contentBx .postColumn .postBox.extraHeight
-{
-    height: 600px;
-}
-
-.post .contentBx .postColumn .postBox .textBx
+.post .contentBx .postColumn .postBox .textBx,
+.allPost .contentBx .postColumn .postBox .textBx
 {
     position: absolute;
     top: 0;
@@ -303,13 +302,30 @@ p
     visibility: hidden;
 }
 
-.post .contentBx .postColumn .postBox:hover .textBx
+.post .contentBx .postColumn .postBox:hover .textBx,
+.allPost .contentBx .postColumn .postBox:hover .textBx
 {
     opacity: 0.9;
     visibility: visible;
 }
 
-.post .contentBx .postColumn .postBox .textBx h3
+.post .contentBx .postColumn .postBox .textBx .info,
+.allPost .contentBx .postColumn .postBox .textBx .info
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.post .contentBx .postColumn .postBox .textBx .info img,
+.allPost .contentBx .postColumn .postBox .textBx .info img
+{
+    margin-right: 5px;
+}
+
+.post .contentBx .postColumn .postBox .textBx h3,
+.allPost .contentBx .postColumn .postBox .textBx h3
 {
     font-weight: 400;
     font-size: 1em;
@@ -317,7 +333,19 @@ p
     color: black;
 }
 
-.post .contentBx .postColumn .postBox .textBx .btn
+.post .contentBx .postColumn .postBox .textBx h2,
+.allPost .contentBx .postColumn .postBox .textBx h2
+{
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.post .contentBx .postColumn .postBox .textBx .btn,
+.allPost .contentBx .postColumn .postBox .textBx .btn
 {
     padding: 4px 10px;
     background: black;
@@ -365,6 +393,14 @@ p
     margin-top: 20px;
 }
 
+.contact .contactForm .row3
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact .contactForm .row input,
 .contact .contactForm .row2 textarea
 {
@@ -384,6 +420,13 @@ p
 {
     resize: none;
     height: 200px;
+}
+
+.contact .contactForm .row3 img
+{
+    width: 40px;
+    height: 40px;
+    margin: 20px 50px;
 }
 
 ::placeholder
@@ -434,6 +477,14 @@ footer .footerMenu li a
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+footer .footerMenu li img
+{
+    display: inline-block;
+    margin: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .copyrightText
