@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 
 *
 {
@@ -12,7 +33,6 @@
 body
 {
     min-height: 150vh;
-    background: #f8f8f8;
 }
 
 header
@@ -38,13 +58,13 @@ header.sticky
 
 .logo
 {
+    font-family: 'Lobster', sans-serif;
     position: relative;
     display: inline-block;
     color: black;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -110,9 +130,8 @@ header.sticky
 section
 {
     position: relative;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
     width: 100%;
-    min-height: 100vh;
     background: white;
 }
 
@@ -128,6 +147,7 @@ section
 
 .banner
 {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,13 +254,52 @@ p
     text-align: justify;
 }
 
+.mainInfo
+{
+    position: relative;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.mainInfo .content .mainPicture
+{
+    margin-top: 20px;
+    width: 90%;
+}
+
+.mainInfo .content h2
+{
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.mainInfo .content .etiquette
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.etiquetteContent
+{
+    display: flex;
+    align-items: center;
+}
+
 .about .contentBx
 {
     position: relative;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
 }
 
 .about .contentBx .content
@@ -250,12 +309,17 @@ p
 
 .about .contentBx .content .imgBx
 {
-    min-height: 400px;
+    height: 400px;
 }
 
 .post, .allPost
 {
     position: relative;
+}
+
+.allPost
+{
+    padding-bottom: 50px;
 }
 
 .post .contentBx,
@@ -268,14 +332,8 @@ p
     margin-top: 20px;
 }
 
-.post .contentBx .postColumn,
-.allPost .contentBx .postColumn
-{
-    position: relative;
-}
-
-.post .contentBx .postColumn .postBox,
-.allPost .contentBx .postColumn .postBox
+.post .contentBx .postBox,
+.allPost .contentBx .postBox
 {
     position: relative;
     width: 100%;
@@ -283,8 +341,8 @@ p
     margin-top: 20px;
 }
 
-.post .contentBx .postColumn .postBox .textBx,
-.allPost .contentBx .postColumn .postBox .textBx
+.post .contentBx .postBox .textBx,
+.allPost .contentBx .postBox .textBx
 {
     position: absolute;
     top: 0;
@@ -302,15 +360,15 @@ p
     visibility: hidden;
 }
 
-.post .contentBx .postColumn .postBox:hover .textBx,
-.allPost .contentBx .postColumn .postBox:hover .textBx
+.post .contentBx .postBox:hover .textBx,
+.allPost .contentBx .postBox:hover .textBx
 {
     opacity: 0.9;
     visibility: visible;
 }
 
-.post .contentBx .postColumn .postBox .textBx .info,
-.allPost .contentBx .postColumn .postBox .textBx .info
+.post .contentBx .postBox .textBx .info,
+.allPost .contentBx .postBox .textBx .info
 {
     width: 100%;
     display: flex;
@@ -318,14 +376,14 @@ p
     align-items: center;
 }
 
-.post .contentBx .postColumn .postBox .textBx .info img,
-.allPost .contentBx .postColumn .postBox .textBx .info img
+.post .contentBx .postBox .textBx .info img,
+.allPost .contentBx .postBox .textBx .info img
 {
     margin-right: 5px;
 }
 
-.post .contentBx .postColumn .postBox .textBx h3,
-.allPost .contentBx .postColumn .postBox .textBx h3
+.post .contentBx .postBox .textBx h3,
+.allPost .contentBx .postBox .textBx h3
 {
     font-weight: 400;
     font-size: 1em;
@@ -333,8 +391,8 @@ p
     color: black;
 }
 
-.post .contentBx .postColumn .postBox .textBx h2,
-.allPost .contentBx .postColumn .postBox .textBx h2
+.post .contentBx .postBox .textBx h2,
+.allPost .contentBx .postBox .textBx h2
 {
     font-weight: 400;
     font-size: 1.2em;
@@ -344,8 +402,8 @@ p
     margin-bottom: 25px;
 }
 
-.post .contentBx .postColumn .postBox .textBx .btn,
-.allPost .contentBx .postColumn .postBox .textBx .btn
+.post .contentBx .postBox .textBx .btn,
+.allPost .contentBx .postBox .textBx .btn
 {
     padding: 4px 10px;
     background: black;
@@ -361,6 +419,7 @@ p
 
 .contact
 {
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -459,17 +518,20 @@ footer
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-footer .footerMenu
+footer .footerMenu,
+footer .footerMenu2
 {
     display: flex;
 }
 
-footer .footerMenu li
+footer .footerMenu li,
+footer .footerMenu2 li
 {
     list-style: none;
 }
 
-footer .footerMenu li a
+footer .footerMenu li a,
+footer .footerMenu2 li a
 {
     display: inline-block;
     text-decoration: none;
@@ -479,7 +541,8 @@ footer .footerMenu li a
     letter-spacing: 2px;
 }
 
-footer .footerMenu li img
+footer .footerMenu li img,
+footer .footerMenu2 li img
 {
     display: inline-block;
     margin: 20px;
@@ -492,4 +555,105 @@ footer .footerMenu li img
     color: black;
     text-align: center;
     letter-spacing: 1px;
+}
+
+@media (max-width: 991px) 
+{
+    header
+    {
+        padding: 20px 20px;
+    }
+
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    section
+    {
+        padding: 20px;
+    }
+
+    .banner .contentBx
+    {
+        padding: 40px 30px;
+    }
+
+    .mainInfo
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainInfo .content .mainPicture
+    {
+        width: 70%;
+    }
+
+    .about .contentBx
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post .contentBx,
+    .allPost .contentBx
+    {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+
+    .post .contentBx .postBox,
+    .allPost .contentBx .postBox
+    {
+        height: 300px;
+    }
+
+    .post .contentBx .postBox .textBx h3,
+    .allPost .contentBx .postBox .textBx h3
+    {
+        display: none;
+    }
+
+    .about .contentBx .content .cover
+    {
+        position: inherit;
+    }
+
+    .contact .contactForm .row
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer
+    {
+        padding: 40px 20px;
+    }
+
+    footer .footerMenu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    footer .footerMenu li a
+    {
+        margin: 5px 0;
+    }
+
+    .title
+    {
+        padding-top: 50px;
+    }
+
+    .mgt60
+    {
+        margin-top: 0;
+    }
+
+    .postSection
+    {
+        margin-top: 50px;
+    }
+    
 }

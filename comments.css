@@ -1,0 +1,131 @@
+.comments
+{
+    display: relative;
+    margin: 0 5% 5% 5%;
+}
+
+.comments .comment_header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.comments .comment_header .total {
+    color: black;
+    font-size: 0.8em;
+}
+
+.comment_header .write_comment_btn,
+.comments .write_comment button
+{
+    padding: 8px 20px;
+    border: 2px;
+    color: black;
+    background: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    transition: 0.25s;
+}
+
+.comment_header .write_comment_btn:hover,
+.comments .write_comment button:hover
+{
+    color: white;
+    background: black;
+}
+
+::placeholder
+{
+    color: black;
+}
+
+.comments .write_comment
+{
+    display: none;
+    padding: 20px 0 10px 0;
+}
+
+.comments .write_comment textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    height: 200px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.comments .write_comment input {
+    display: block;
+    text-transform: uppercase;
+    width: 250px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.comments .formHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments .formHeader img
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.comments .write_comment button {
+    cursor: pointer;
+}
+
+.comments .comment {
+    padding-top: 10px;
+}
+
+.comments .comment .name {
+    display: inline;
+    padding: 0 5px 3px 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+.comments .comment .date {
+    color: black;
+    font-size: 0.75em;
+    font-style: italic;
+}
+.comments .comment .content {
+    padding: 5px 0 5px 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.comments .comment .reply_comment_btn {
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    color: #888888;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.comments .comment .replies {
+    padding-left: 30px;
+}
