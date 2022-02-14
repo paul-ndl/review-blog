@@ -47,7 +47,7 @@
                     iste nostrum non qui omnis rem dolorem voluptas laborum cupiditate animi nulla.<br><br>Nemo
                     blanditiis,
                     eligendi minus similique officia adipisci, qui et earum cum corporis animi aut nam quaerat est,
-                    beatae ratione nostrum ducimus ut!Beatae rem quos, quisquam fugit
+                    beatae ratione nostrum ducimus ut! Beatae rem quos, quisquam fugit
                     molestias repudiandae odio quidem tempora at voluptatibus eaque, autem unde blanditiis, animi
                     voluptatum iure iste sequi deleniti ullam tempore. Iusto laboriosam voluptas officiis eaque
                     voluptatem enim repellendus. Nobis quos omnis quisquam labore est autem, nostrum, in officia odio
