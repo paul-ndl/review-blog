@@ -1,8 +1,8 @@
 <?php
 // MySQL details
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
+$DATABASE_HOST = 'localhost'; //sql.free.fr
+$DATABASE_USER = 'root'; //blog.pripri
+$DATABASE_PASS = ''; //Pripri1902
 $DATABASE_NAME = 'phpcomments';
 
 // Connect to database
