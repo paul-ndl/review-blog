@@ -1,20 +1,134 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Comments System</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="comments.css" rel="stylesheet" type="text/css">
-        <script src="fetch.js"></script>
-	</head>
-	<body>
+<html lang="fr">
 
-        <div class="comments"></div>
+<head>
+	<meta charset="utf-8">
+	<title>L'Etranger, Albert Camus</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="comments.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="resources/icon.png" />
+	<script src="fetch.js"></script>
+</head>
 
-        <script>
-        const comments_page_id = 5;
-        fetch_comments(comments_page_id);
-        </script>
+<body>
 
-	</body>
+	<header>
+		<a href="index.php#home" class="logo">Le blog de Pripri</a>
+		<div class="menuToggle"></div>
+	</header>
+
+	<ul class="navigation">
+		<li><a href="index.php#home" onclick="toggleMenu();">Accueil</a></li>
+		<li><a href="index.php#about" onclick="toggleMenu();">A propos</a></li>
+		<li><a href="index.php#post" onclick="toggleMenu();">Posts</a></li>
+		<li><a href="index.php#contact" onclick="toggleMenu();">Contact</a></li>
+	</ul>
+
+	<!-- Review -->
+
+	<section class="postSection">
+		<div class=""back>
+			<a href="javascript:history.go(-1)">< Retour</a>
+		</div>
+		<div class="mainInfo">
+			<div class="content">
+				<h1>L'Etranger</h1>
+				<h2>Albert Camus</h2>
+				<h3>1942</h3>
+				<br>
+				<div class="etiquetteContent">
+					<img src="resources/etiquette.png" class="etiquette">
+					<p>roman, historique</p>
+				</div>
+				<br>
+				<img src="resources/post5.jpg" class="mainPicture">
+			</div>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iste velit deleniti eligendi at.
+				Reprehenderit veniam possimus magnam maiores, rem neque perspiciatis nemo numquam cupiditate quasi culpa
+				autem harum, laudantium iusto eos architecto quaerat natus commodi maxime provident cum ea tenetur.
+				Aspernatur laboriosam magnam officiis vel dolor, enim eaque repellat excepturi sunt voluptas, doloribus
+				impedit, odit ad qui ex quidem consectetur corrupti saepe amet at exercitationem rem vero eligendi
+				laborum. Commodi, nisi necessitatibus numquam consequatur consectetur quibusdam nemo eaque obcaecati
+				quod mollitia earum facilis repudiandae porro facere adipisci deleniti magnam dolores culpa
+				perspiciatis. Odit quae porro voluptatem corrupti quis illo eaque, aspernatur maiores suscipit pariatur
+				hic odio quas nam, vitae, unde assumenda corporis aut? Fugit veniam numquam dolore beatae non quos
+				molestiae quasi, accusantium, ratione ducimus vero atque, fugiat id nam architecto dolorum cupiditate
+				obcaecati cumque unde blanditiis voluptatem labore perferendis adipisci illum? Labore quae illum
+				eligendi vitae sint dicta corrupti quisquam fugiat deleniti quasi, unde asperiores explicabo deserunt ab
+				magni sed nostrum ad commodi fuga est maxime. Esse, ex ullam! Officia laudantium porro repellat illum
+				aut dolore mollitia, numquam maiores dolores dolorum ex, iusto eaque doloribus alias! Possimus odit
+				consequuntur cum, optio, autem similique minima architecto dignissimos blanditiis harum ut temporibus
+				maxime. Dicta eveniet consectetur harum voluptatem, odit nam dignissimos blanditiis provident, nesciunt
+				earum facilis exercitationem nulla laboriosam? Quidem asperiores dolorem facere ducimus vitae numquam
+				rem ut cupiditate voluptatem illum, voluptate a? Ipsum incidunt eius dicta dolor porro doloremque, quis
+				facilis, laboriosam numquam quidem earum impedit et, similique doloribus nam consectetur nisi commodi
+				quisquam! Magni, enim. Enim consequatur, tempore deleniti voluptatibus veritatis nulla atque ex
+				provident iusto, eveniet nam, minima esse quidem quasi quos quis alias qui vero rerum repudiandae
+				nostrum. Dolores magnam omnis consequuntur cupiditate nesciunt commodi placeat ratione illo minima saepe
+				nobis quia obcaecati sunt debitis, repellat ex quasi officiis! Saepe ducimus vero nulla repellat
+				recusandae reiciendis commodi accusamus nesciunt error eligendi accusantium est, nisi praesentium
+				veritatis enim aspernatur modi totam tempore architecto sint, earum quae expedita consequatur deleniti!
+				Eum delectus nesciunt odit consequatur ipsum ipsam reprehenderit dignissimos maiores corrupti vel
+				praesentium doloribus quas, reiciendis tempora, suscipit repudiandae sit, accusamus error? Laborum, fuga
+				magni reiciendis reprehenderit quaerat nemo exercitationem, nisi quibusdam quia officiis pariatur quam
+				numquam accusamus natus atque quis! Nostrum excepturi aspernatur earum accusantium distinctio veritatis
+				suscipit, aperiam tenetur consequatur, neque culpa? Atque cum adipisci alias! Unde eaque cum amet odio
+				quibusdam molestias dolores sit totam, eius ipsum assumenda natus voluptatibus est asperiores veniam
+				ullam laborum deserunt odit recusandae sed velit. Voluptate assumenda tenetur non a necessitatibus
+				deleniti nostrum accusantium ad magnam sequi, amet dolore doloremque nam? Rem labore maiores in
+				blanditiis voluptates et non magni, eius officia? Qui sed eos ut, earum quidem quasi recusandae vero hic
+				exercitationem non ipsum cupiditate eligendi voluptatem optio delectus consequuntur omnis quaerat quos
+				accusantium incidunt nemo magnam sunt quae cum? Numquam modi, officiis aliquid commodi vero tempora
+				quisquam inventore impedit dolore sunt voluptas fugiat, illo eligendi veniam, facere illum suscipit
+				provident distinctio consequuntur. Hic modi distinctio minus consectetur nam.
+			</div>
+		</div>
+	</section>
+
+	<!-- Comments -->
+	<div class="comments"></div>
+
+	<!-- Footer -->
+	<footer>
+		<a href="index.php#home" class="logo">Le blog de Pripri</a>
+		<ul class="footerMenu">
+			<li><a href="index.php#home">Accueil</a></li>
+			<li><a href="index.php#about">A propos</a></li>
+			<li><a href="index.php#post">Posts</a></li>
+			<li><a href="index.php#contact">Contact</a></li>
+		</ul>
+		<ul class="footerMenu2">
+			<li><a href="https://www.facebook.com/" target="_blank"><img src="resources/fb.png" class="socialMedia"></a>
+			</li>
+			<li><a href="https://www.instagram.com/" target="_blank"><img src="resources/insta.png"
+						class="socialMedia"></a></li>
+			<li><a href="https://twitter.com/" target="_blank"><img src="resources/twitter.png" class="socialMedia"></a>
+			</li>
+		</ul>
+		<p class="copyrightText">Copyright &#169; 2022. All right Reserved</p>
+	</footer>
+
+	<script>
+		const comments_page_id = 5;
+		fetch_comments(comments_page_id);
+		const menuToggle = document.querySelector('.menuToggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.onclick = function () {
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+		window.addEventListener('scroll', function () {
+			const header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		})
+
+		function toggleMenu() {
+			menuToggle.classList.remove('active');
+			navigation.classList.remove('active');
+		}
+	</script>
+
+</body>
+
 </html>

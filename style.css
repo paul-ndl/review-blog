@@ -557,6 +557,22 @@ footer .footerMenu2 li img
     letter-spacing: 1px;
 }
 
+.postSection a
+{
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.postSection a:hover
+{
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 991px) 
 {
     header

@@ -128,27 +128,39 @@
         <div class="title">
             <a href="https://utip.io/" target="_blank" class="btn">Soutenez moi!</a>
         </div>
-        <div class="contactForm">
+        <form class="contactForm" action='' method="post">
             <div class="row3">
                 <a href="https://www.facebook.com/" target="_blank"><img src="resources/fb.png" class="socialMedia"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="resources/insta.png" class="socialMedia"></a>
                 <a href="https://twitter.com/" target="_blank"><img src="resources/twitter.png" class="socialMedia"></a>
             </div>
             <div class="row">
-                <input type="text" name="" placeholder="Pr&eacute;nom">
-                <input type="text" name="" placeholder="Nom">
+                <input type="text" name="firstName" placeholder="Pr&eacute;nom" required>
+                <input type="text" name="lastName" placeholder="Nom" required>
             </div>
             <div class="row">
-                <input type="text" name="" placeholder="Adresse email">
-                <input type="text" name="" placeholder="Num&eacute;ro t&eacute;l&eacute;phone">
+                <input type="text" name="mail" placeholder="Adresse email" class="mail" required>
+                <input type="text" name="phone" placeholder="Num&eacute;ro t&eacute;l&eacute;phone">
             </div>
             <div class="row2">
-                <textarea placeholder="Message"></textarea>
+                <textarea name="message" placeholder="Message" required></textarea>
             </div>
             <div class="row2">
                 <input type="submit" value="Envoyer" class="btn">
             </div>
-        </div>
+        </form>
+
+        <?php
+			if (isset($_POST) && !empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['mail'])
+			&& !empty($_POST['message'])){
+				extract($_POST);
+				$destinataire ='nadal.paul@gmail.com';
+				$expediteur = $firstName . ' ' . $lastName . ' <'.$mail.'>';
+				$mail = mail($destinataire, "Nouveau message reçu de ton blog!", $message, $expediteur);
+				if($mail)echo'Message envoyé avec succès!'; else echo'Echec Envoi!';
+			};
+		?>
+
     </section>
 
     <!-- Footer -->
