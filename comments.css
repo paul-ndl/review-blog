@@ -1,6 +1,5 @@
 .comments
 {
-    display: relative;
     margin: 0 5% 5% 5%;
 }
 
@@ -128,4 +127,17 @@
 }
 .comments .comment .replies {
     padding-left: 30px;
+}
+
+@media (max-width: 991px) 
+{
+    .comments .comment_header
+    {
+        flex-direction: column;
+    }
+
+    .comments .comment_header .total
+    {
+        margin-bottom: 15px;
+    }
 }

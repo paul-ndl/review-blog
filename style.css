@@ -264,9 +264,15 @@ p
     padding-bottom: 50px;
 }
 
+.mainInfo .content
+{
+    justify-content: center;
+}
+
 .mainInfo .content .mainPicture
 {
-    margin-top: 20px;
+    display: block;
+    margin: 20px 0 0 0;
     width: 90%;
 }
 
@@ -611,6 +617,7 @@ footer .footerMenu2 li img
     .mainInfo .content .mainPicture
     {
         width: 70%;
+        margin: 0 auto;
     }
 
     .about .contentBx
@@ -679,5 +686,4 @@ footer .footerMenu2 li img
     {
         margin-top: 70px;
     }
-    
 }
