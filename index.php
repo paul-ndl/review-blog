@@ -23,7 +23,7 @@
 
     <!-- Banner -->
     <section class="banner" id="home">
-        <img src="resources/banner2.jpg" class="cover">
+        <img src="resources/banner.gif" class="cover">
         <div class="contentBx">
             <h2>Le Blog de Pripri</h2>
             <h4>Critiques litt&eacute;raires</h4>
