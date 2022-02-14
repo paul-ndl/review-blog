@@ -51,7 +51,8 @@
     padding: 20px 0 10px 0;
 }
 
-.comments .write_comment textarea {
+.comments .write_comment textarea 
+{
     width: 100%;
     padding: 10px;
     outline: none;
@@ -62,7 +63,8 @@
     letter-spacing: 2px;
 }
 
-.comments .write_comment input {
+.comments .write_comment input 
+{
     display: block;
     text-transform: uppercase;
     width: 250px;
@@ -87,15 +89,18 @@
     cursor: pointer;
 }
 
-.comments .write_comment button {
+.comments .write_comment button 
+{
     cursor: pointer;
 }
 
-.comments .comment {
+.comments .comment 
+{
     padding-top: 10px;
 }
 
-.comments .comment .name {
+.comments .comment .name 
+{
     display: inline;
     padding: 0 5px 3px 0;
     margin: 0;
@@ -104,17 +109,23 @@
     color: black;
     text-transform: uppercase;
 }
-.comments .comment .date {
+
+.comments .comment .date 
+{
     color: black;
     font-size: 0.75em;
     font-style: italic;
 }
-.comments .comment .content {
+
+.comments .comment .content 
+{
     padding: 5px 0 5px 0;
     margin-left: 20px;
     margin-bottom: 10px;
 }
-.comments .comment .reply_comment_btn {
+
+.comments .comment .reply_comment_btn 
+{
     display: flex;
     text-decoration: none;
     margin-bottom: 10px;
@@ -125,7 +136,9 @@
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-.comments .comment .replies {
+
+.comments .comment .replies 
+{
     padding-left: 30px;
 }
 
