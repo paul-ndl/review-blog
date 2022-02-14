@@ -94,7 +94,7 @@ header.sticky
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ section
     position: relative;
     padding: 100px 100px 0 100px;
     width: 100%;
-    background: white;
+    background: #f8f8f8;
 }
 
 .cover
@@ -157,7 +157,7 @@ section
 {
     position: relative;
     z-index: 1;
-    background: white;
+    background: #f8f8f8;
     padding: 70px;
     display: flex;
     justify-content: center;
@@ -509,12 +509,12 @@ p
 
 footer
 {
-    padding: 100px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f8f8f8;
+    background-color: #f8f4f4;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -555,6 +555,14 @@ footer .footerMenu2 li img
     color: black;
     text-align: center;
     letter-spacing: 1px;
+}
+
+.back
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .back a
