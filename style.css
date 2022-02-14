@@ -557,7 +557,7 @@ footer .footerMenu2 li img
     letter-spacing: 1px;
 }
 
-.postSection a
+.back a
 {
     padding: 10px;
     text-decoration: none;
@@ -567,7 +567,7 @@ footer .footerMenu2 li img
     text-transform: uppercase;
 }
 
-.postSection a:hover
+.back a:hover
 {
     background-color: white;
     color: black;
