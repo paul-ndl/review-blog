@@ -28,12 +28,6 @@ function fetch_comments(comments_page_id) {
     });
 }
 
-function fetch_last_posts() {
-    fetch("lastPosts.php").then(response => response.text()).then(data => {
-        document.querySelector(".post .contentBx").innerHTML = data;
-    });
-}
-
 function toggleMenu(){
     menuToggle.classList.remove('active');
     navigation.classList.remove('active');
