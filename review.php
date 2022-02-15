@@ -30,7 +30,6 @@ if (isset($_GET['id'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?=$post['title']?>, <?=$post['author']?></title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="comments.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="resources/icon.png" />
 	<script src="functions.js"></script>
 </head>
