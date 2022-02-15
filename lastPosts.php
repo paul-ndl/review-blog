@@ -28,8 +28,8 @@ function show_posts($posts, $pdo_comments) {
             <div class="textBx">
                 <h1>'. $post['title'] .'</h1>
                 <h2>'. $post['author'] .'</h2>
-                <h3>'. $post['content'][0] .'</h3>
-                <a href="post'. $post['id'] .'.html" class="btn">Lire plus</a>
+                <h3>'. substr($post['content'], 0, 100) .'...</h3>
+                <a href="review.php?id=' . $post['id'] .'" class="btn">Lire plus</a>
                 <div class="info">
                     <img src="resources/com.png">'. $comments_info['total_comments'] .'
                 </div>

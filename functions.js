@@ -39,3 +39,8 @@ function fetch_last_posts() {
         document.querySelector(".post .contentBx").innerHTML = data;
     });
 }
+
+function toggleMenu(){
+    menuToggle.classList.remove('active');
+    navigation.classList.remove('active');
+}

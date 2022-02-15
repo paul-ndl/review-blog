@@ -6,7 +6,7 @@
     <title>Le blog de Pripri</title>
     <link rel="shortcut icon" href="resources/icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="fetch.js"></script>
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -73,7 +73,7 @@
         <div class="contentBx">
         </div>
         <div class="title">
-            <a href="posts.html" class="btn mgt60">Plus de posts</a>
+            <a href="reviews.html" class="btn mgt60">Plus de posts</a>
         </div>
     </section>
 
@@ -153,11 +153,6 @@
             const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         })
-
-        function toggleMenu(){
-            menuToggle.classList.remove('active');
-            navigation.classList.remove('active');
-        }
     </script>
 </body>
 
