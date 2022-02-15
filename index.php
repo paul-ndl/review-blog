@@ -73,7 +73,7 @@
         <div class="contentBx">
         </div>
         <div class="title">
-            <a href="reviews.html" class="btn mgt60">Plus de posts</a>
+            <a href="reviews.php" class="btn mgt60">Plus de posts</a>
         </div>
     </section>
 
