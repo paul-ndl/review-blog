@@ -27,3 +27,15 @@ function fetch_comments(comments_page_id) {
         });
     });
 }
+
+function fetch_all_posts() {
+    fetch("posts.php").then(response => response.text()).then(data => {
+        document.querySelector(".allPost .contentBx").innerHTML = data;
+    });
+}
+
+function fetch_last_posts() {
+    fetch("lastPosts.php").then(response => response.text()).then(data => {
+        document.querySelector(".post .contentBx").innerHTML = data;
+    });
+}

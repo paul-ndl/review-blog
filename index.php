@@ -6,6 +6,7 @@
     <title>Le blog de Pripri</title>
     <link rel="shortcut icon" href="resources/icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="fetch.js"></script>
 </head>
 
 <body>
@@ -70,48 +71,6 @@
                 iste! Voluptates modi distinctio non alias beatae fuga necessitatibus facere.</p>
         </div>
         <div class="contentBx">
-            <div class="postBox">
-                <div class="imgBx">
-                    <img src="resources/post1.jpg" class="cover">
-                </div>
-                <div class="textBx">
-                    <h1>L'Etranger</h1>
-                    <h2>Albert Camus</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero reiciendis nobis
-                        facere mollitia accusamus esse aut! Delectus, perspiciatis veniam!</h3>
-                    <a href="post1.html" class="btn">Lire plus</a>
-                    <div class="info">
-                    </div>
-                </div>
-            </div>
-            <div class="postBox">
-                <div class="imgBx">
-                    <img src="resources/post2.jpg" class="cover">
-                </div>
-                <div class="textBx">
-                    <h1>L'Illiade</h1>
-                    <h2>Hom&egrave;re</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero reiciendis nobis
-                        facere mollitia accusamus esse aut! Delectus, perspiciatis veniam!</h3>
-                    <a href="post2.html" class="btn">Lire plus</a>
-                    <div class="info">
-                    </div>
-                </div>
-            </div>
-            <div class="postBox">
-                <div class="imgBx">
-                    <img src="resources/post3.jpg" class="cover">
-                </div>
-                <div class="textBx">
-                    <h1>Le roi Arthur</h1>
-                    <h2>Michael Morpurgo</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero reiciendis nobis
-                        facere mollitia accusamus esse aut! Delectus, perspiciatis veniam!</h3>
-                    <a href="post3.html" class="btn">Lire plus</a>
-                    <div class="info">
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="title">
             <a href="posts.html" class="btn mgt60">Plus de posts</a>
@@ -181,12 +140,8 @@
     </footer>
 
     <script>
-        const comments = document.querySelectorAll(".info");
-        for (let i = 0; i < comments.length; i++) {
-            fetch("number_comments.php?page_id=" + (i+1).toString()).then(response => response.text()).then(data => {
-                comments[i].innerHTML = '<img src="resources/com.png">' + data;
-            });
-        }
+
+        fetch_last_posts();
 
         const menuToggle = document.querySelector('.menuToggle');
         const navigation = document.querySelector('.navigation');
