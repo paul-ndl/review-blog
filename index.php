@@ -23,7 +23,7 @@ function show_posts($posts, $pdo_comments) {
         $html .= '
         <div class="postBox">
             <div class="imgBx">
-                <img src="'. $post['img'] .'" class="cover">
+                <img src="resources/post'. $post['id'] .'.jpg" class="cover">
             </div>
             <div class="textBx">
                 <h1>'. $post['title'] .'</h1>

@@ -194,6 +194,7 @@ section
     border: 2px;
     color: black;
     background: white;
+    cursor: pointer;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -610,9 +611,9 @@ footer .footerMenu2 li img
 .comments .write_comment button
 {
     padding: 8px 20px;
-    border: 2px;
     color: black;
     background: white;
+    cursor: pointer;
     text-decoration: none;
     font-size: 0.8em;
     font-weight: 300;
