@@ -15,7 +15,8 @@ try {
 
 
 if (isset($_GET['id'])) {
-    echo $_GET['id'];
+    $stmt = $pdo->prepare('DELETE FROM reviews WHERE id = ?');
+    $stmt->execute([ $_GET['id'] ]);
 }
 
 ?>

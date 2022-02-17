@@ -41,6 +41,8 @@ function show_review($post) {
                 Contenu :
                 <br>
                 <textarea name="content" class="bigInput">'. $post['content'] .'</textarea>
+                <br>
+                <input id="appt-time" type="time" name="appt-time" step="2">
             </div>';
     return $html;
 }
@@ -70,7 +72,7 @@ $post = $stmt->fetch(PDO::FETCH_ASSOC);
         <?=show_review($post)?>
         <br>
         <a class="add modify" onclick="modifyReview();">Modifier la review</a>
-        <a class="add delete" href="gestion.php">Supprimer une review</a>
+        <a class="add delete" onclick="deleteReview();">Supprimer une review</a>
     <div>
 
     <br>
@@ -78,8 +80,17 @@ $post = $stmt->fetch(PDO::FETCH_ASSOC);
 
     <script type="text/javascript">
         function modifyReview() {
-            fetch("modifyReview.php").then(response => console.log(response['statusText']));
-            return false;
+            if (confirm("Es-tu sûre de vouloir modifier cette review?")) {
+                fetch("modifyReview.php?id=<?=$_GET['id']?>");
+                return false;
+            }
+        }
+
+        function deleteReview() {
+            if (confirm("Es-tu sûre de vouloir supprimer cette review?")) {
+                fetch("deleteReview.php?id=<?=$_GET['id']?>").then(() => document.location.href = "gestion.php");
+                return false;
+            }
         }
     </script>
     
