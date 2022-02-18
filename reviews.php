@@ -41,7 +41,7 @@ function show_posts($posts, $pdo_comments) {
 
 
 
-$stmt = $pdo_review->prepare('SELECT * FROM reviews ORDER BY submit_date DESC');
+$stmt = $pdo_review->prepare('SELECT * FROM reviews ORDER BY submit_time DESC');
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

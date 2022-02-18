@@ -33,7 +33,7 @@ function show_reviews($posts) {
                 <td>'. $post['date'] .'</td>
                 <td>'. $post['type'] .'</td>
                 <td>'. substr($post['content'], 0, 100) .'...</td>
-                <td>'. $post['submit_date'] .'</td>
+                <td>'. $post['submit_time'] .'</td>
                 <td><a href="cmdreview.php?id='. $post['id'] .'">Modifier</a></td>
             </tr>';
     }
@@ -43,7 +43,7 @@ function show_reviews($posts) {
 
 
 
-$stmt = $pdo->prepare('SELECT * FROM reviews ORDER BY submit_date ASC');
+$stmt = $pdo->prepare('SELECT * FROM reviews ORDER BY submit_time ASC');
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

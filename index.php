@@ -39,7 +39,7 @@ function show_posts($posts, $pdo_comments) {
     return $html;
 }
 
-$stmt = $pdo_review->prepare('SELECT * FROM reviews ORDER BY submit_date DESC LIMIT 3');
+$stmt = $pdo_review->prepare('SELECT * FROM reviews ORDER BY submit_time DESC LIMIT 3');
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
