@@ -16,7 +16,7 @@ try {
 function show_comments($comments, $parent_id = -1) {
     $html = '';
     if ($parent_id != -1) {
-        array_multisort(array_column($comments, 'submit_time'), SORT_ASC, $comments);
+        array_multisort(array_column($comments, 'submit_date'), SORT_ASC, $comments);
     }
     // Iterate the comments using the foreach loop
     foreach ($comments as $comment) {
@@ -26,7 +26,7 @@ function show_comments($comments, $parent_id = -1) {
             <div class="comment">
                 <div>
                     <h3 class="name">' . htmlspecialchars($comment['name'], ENT_QUOTES) . '</h3>
-                    <span class="date">' . $comment['submit_time'] . '</span>
+                    <span class="date">' . $comment['submit_date'] . '</span>
                 </div>
                 <p class="content">' . nl2br(htmlspecialchars($comment['content'], ENT_QUOTES)) . '</p>
                 <a class="reply_comment_btn" href="#" data-comment-id="' . $comment['id'] . '">Répondre</a>
@@ -66,12 +66,12 @@ if (isset($_GET['page_id'])) {
     // Check if the submitted form variables exist
     if (isset($_POST['name'], $_POST['content'])) {
         // POST variables exist, insert a new comment into the MySQL comments table (user submitted form)
-        $stmt = $pdo->prepare('INSERT INTO comments (page_id, parent_id, name, content, submit_time) VALUES (?,?,?,?,NOW())');
+        $stmt = $pdo->prepare('INSERT INTO comments (page_id, parent_id, name, content, submit_date) VALUES (?,?,?,?,NOW())');
         $stmt->execute([ $_GET['page_id'], $_POST['parent_id'], $_POST['name'], $_POST['content'] ]);
         exit('Votre commentaire a été envoyé avec succès!');
     }
     // Get all comments by the Page ID ordered by the submit date
-    $stmt = $pdo->prepare('SELECT * FROM comments WHERE page_id = ? ORDER BY submit_time DESC');
+    $stmt = $pdo->prepare('SELECT * FROM comments WHERE page_id = ? ORDER BY submit_date DESC');
     $stmt->execute([ $_GET['page_id'] ]);
     $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     // Get the total number of comments
