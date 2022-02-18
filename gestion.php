@@ -66,7 +66,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div>
         <?=show_reviews($posts)?>
         <br>
-        <a class="add">Ajouter une review</a>
+        <a class="add" href="newReview.php">Ajouter une review</a>
     <div>
 
     <br>

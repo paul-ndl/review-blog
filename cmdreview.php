@@ -12,11 +12,6 @@ try {
     exit('Failed to connect to database!');
 }
 
-function modify_review($post)
-{
-    echo "salut";
-}
-
 function show_review($post) {
     $html = '
             <form>
@@ -25,27 +20,27 @@ function show_review($post) {
                 <br>
                 Titre :
                 <br>
-                <input name="title" class="smallInput" type="text" value="'. $post['title'] .'">
+                <input name="title" class="smallInput" type="text" value="'. $post['title'] .'" required>
                 <br>
                 Auteur : 
                 <br>
-                <input name="author" class="smallInput" type="text" value="'. $post['author'] .'">
+                <input name="author" class="smallInput" type="text" value="'. $post['author'] .'" required>
                 <br>
                 Date : 
                 <br>
-                <input name="date" class="smallInput" type="text" value="'. $post['date'] .'">
+                <input name="date" class="smallInput" type="text" value="'. $post['date'] .'" required>
                 <br>
                 Type : 
                 <br>
-                <input name="type" class="smallInput" type="text" value="'. $post['type'] .'">
+                <input name="type" class="smallInput" type="text" value="'. $post['type'] .'" required>
                 <br>
                 Contenu :
                 <br>
-                <textarea name="content" class="bigInput">'. $post['content'] .'</textarea>
+                <textarea name="content" class="bigInput" required>'. $post['content'] .'</textarea>
                 <br>
-                <input name="submit_date" class="smallInput" type="date" value='. $post['submit_time'] .'>
+                <input name="submit_date" class="smallInput" type="date" value='. $post['submit_time'] .' required>
                 <br>
-                <input name="submit_time" class="smallInput" type="time" value='. substr($post['submit_time'], 11) .' step="2">
+                <input name="submit_time" class="smallInput" type="time" value='. substr($post['submit_time'], 11) .' step="2" required>
             </div>
             </form>';
     return $html;
