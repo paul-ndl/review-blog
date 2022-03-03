@@ -22,7 +22,6 @@ function show_comments($comments, $parent_id = -1) {
     foreach ($comments as $comment) {
         if ($comment['parent_id'] == $parent_id) {
             // Add the comment to the $html variable
-            echo $comment['name'];
             $html .= '
             <div class="comment">
                 <div>
