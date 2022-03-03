@@ -1,10 +1,10 @@
 <?php
 // MySQL details
 $DATABASE_HOST = 'localhost'; //sql.free.fr
-$DATABASE_USER = 'root'; //blog.pripri
-$DATABASE_PASS = ''; //Pripri1902
-$DATABASE_REVIEW_NAME = 'phpreviews';
-$DATABASE_COMMENTS_NAME = 'phpcomments';
+$DATABASE_USER = 'firstmoment'; //blog.pripri
+$DATABASE_PASS = 'pripri1902'; //Pripri1902
+$DATABASE_REVIEW_NAME = 'blog';
+$DATABASE_COMMENTS_NAME = 'blog';
 
 // Connect to database
 try {
@@ -52,7 +52,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le blog de Pripri</title>
+    <title>The first moment is now</title>
     <link rel="shortcut icon" href="resources/icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="functions.js"></script>
@@ -60,7 +60,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <header>
-        <a href="index.php#home" class="logo">Le blog de Pripri</a>
+        <a href="index.php#home" class="logo">The first moment is now</a>
         <div class="menuToggle"></div>
     </header>
 
@@ -88,7 +88,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <!-- Footer -->
     <footer>
-        <a href="index.php#home" class="logo">Le blog de Pripri</a>
+        <a href="index.php#home" class="logo">The first moment is now</a>
         <ul class="footerMenu">
             <li><a href="index.php#home">Accueil</a></li>
             <li><a href="index.php#about">A propos</a></li>

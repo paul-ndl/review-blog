@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le blog de Pripri</title>
+    <title>The first moment is now</title>
     <link rel="shortcut icon" href="resources/icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="gestion.css">

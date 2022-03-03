@@ -2,9 +2,9 @@
 
     // MySQL details
 $DATABASE_HOST = 'localhost'; //sql.free.fr
-$DATABASE_USER = 'root'; //blog.pripri
-$DATABASE_PASS = ''; //Pripri1902
-$DATABASE_REVIEW_NAME = 'phpreviews';
+$DATABASE_USER = 'firstmoment'; //blog.pripri
+$DATABASE_PASS = 'pripri1902'; //Pripri1902
+$DATABASE_REVIEW_NAME = 'blog';
 
 // Connect to database
 try {

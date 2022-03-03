@@ -1,9 +1,9 @@
 <?php
 // MySQL details
 $DATABASE_HOST = 'localhost'; //sql.free.fr
-$DATABASE_USER = 'root'; //blog.pripri
-$DATABASE_PASS = ''; //Pripri1902
-$DATABASE_NAME = 'phpreviews';
+$DATABASE_USER = 'firstmoment'; //blog.pripri
+$DATABASE_PASS = 'pripri1902'; //Pripri1902
+$DATABASE_NAME = 'blog';
 
 // Connect to database
 try {
@@ -37,7 +37,7 @@ if (isset($_GET['id'])) {
 <body>
 
 	<header>
-		<a href="index.php#home" class="logo">Le blog de Pripri</a>
+		<a href="index.php#home" class="logo">The first moment is now</a>
 		<div class="menuToggle"></div>
 	</header>
 
@@ -79,7 +79,7 @@ if (isset($_GET['id'])) {
 
 	<!-- Footer -->
 	<footer>
-		<a href="index.php#home" class="logo">Le blog de Pripri</a>
+		<a href="index.php#home" class="logo">The first moment is now</a>
 		<ul class="footerMenu">
 			<li><a href="index.php#home">Accueil</a></li>
 			<li><a href="index.php#about">A propos</a></li>

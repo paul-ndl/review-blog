@@ -1,9 +1,9 @@
 <?php
 // MySQL details
 $DATABASE_HOST = 'localhost'; //sql.free.fr
-$DATABASE_USER = 'root'; //blog.pripri
-$DATABASE_PASS = ''; //Pripri1902
-$DATABASE_NAME = 'phpcomments';
+$DATABASE_USER = 'firstmoment'; //blog.pripri
+$DATABASE_PASS = 'pripri1902'; //Pripri1902
+$DATABASE_NAME = 'blog';
 
 // Connect to database
 try {
@@ -22,6 +22,7 @@ function show_comments($comments, $parent_id = -1) {
     foreach ($comments as $comment) {
         if ($comment['parent_id'] == $parent_id) {
             // Add the comment to the $html variable
+            echo $comment['name'];
             $html .= '
             <div class="comment">
                 <div>
